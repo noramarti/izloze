@@ -3,14 +3,17 @@ const balvas = ['Dators', 'Ledusskapis', 'Telefons', 'Automašīna', 'Viedpulkst
 const naudaKopa = 100000;//kopējā summa
 let uzvaretajuSkaits = 5;
 let rindas=document.querySelector('.rindas');
-rindas.innerHTML=' ';
+rindas.innerHTML= ' ';
 for (let i=0; i < uzvaretajuSkaits; i++) {
-    let rand = Math.random() * vardi.lenght;
+    let rand = Math.random() * vardi.length;
     rand= Math.floor(rand);//noapaļo skaitli uz leju
-    console.log(vardi[rand]);//izvada konsolē 
-}
-rindas.innerHTML=
+    let uzvaretajs = vardi[rand];
+    rindas.innerHTML += `
+   
+
+
 <tr>
-    <td>i</td>
-    <td>uzvarētājs</td>
-</tr>
+    <td>${i+1}</td>
+    <td>${uzvaretajs}</td>
+</tr>`
+}
