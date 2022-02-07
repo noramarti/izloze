@@ -9,4 +9,13 @@ h1 {
   p {
     background-color: lightblue;
   }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  body {
+    background-color: lightblue;
+  }
  
