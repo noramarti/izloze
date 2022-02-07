@@ -8,12 +8,15 @@ for (let i=0; i < uzvaretajuSkaits; i++) {
     let rand = Math.random() * vardi.length;
     rand= Math.floor(rand);//noapaļo skaitli uz leju
     let uzvaretajs = vardi[rand];
+    let davanas = balvas[rand];
     rindas.innerHTML += `
    
 
 
 <tr>
+
     <td>${i+1}</td>
     <td>${uzvaretajs}</td>
+    <td>${davanas}</td>
 </tr>`
 }
